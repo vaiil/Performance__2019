@@ -954,6 +954,10 @@ html {
     width: 60px
 }
 
+.carousel-element {
+    overflow: hidden;
+}
+
 @media (max-width: 1230px) {
     .card_size_m {
         grid-column: span 4
