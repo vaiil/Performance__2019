@@ -4,6 +4,7 @@
   "description": "## Задание Оптимизировать страницу, выложить результат на [Github-Pages](https://help.github.com/en/articles/creating-a-github-pages-site) и проверить его на [shri-perf.ru](https://shri-perf.ru), отправив адрес вашей страницы.",
   "main": "webpack.config.js",
   "scripts": {
+    "prod": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
