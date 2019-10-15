@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <script src="./js/main.js"></script>
+    <script async src="./js/multimedia.js"></script>
 </head>
 <body>
 <div class="video-controls">
@@ -257,21 +258,4 @@
         <a class="footer-menu__link" href="./assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
-<script>
-  (function(w, d, n) {
-    var s = d.createElement('script');
-    s.src = '//zen.yandex.ru/widget-loader';
-    d.head.appendChild(s);
-    var c = d.createElement('div');
-    c.style.display = 'none';
-    d.body.appendChild(c);
-    w[n] = w[n] || [];
-    w[n].push(function() {
-      w.YandexZen.renderWidget({
-        container: c,
-        clid: [123,123],
-      });
-    })
-  })(window, document, 'yandexZenAsyncCallbacks')
-</script>
 </body></html>
