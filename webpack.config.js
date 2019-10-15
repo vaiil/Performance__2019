@@ -2,10 +2,15 @@ const path = require('path')
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const StyleLintPlugin = require('stylelint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserJSPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: {
     app: './build.js'
+  },
+  optimization: {
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
