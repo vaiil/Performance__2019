@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var waterContainer = document.querySelector('.card.card_size_s:last-child');
 
-    waterContainer.innerHTML = 
+    waterContainer.innerHTML =
                 '<div class="card-heading">' +
                     '<div class="card-icon-wrap">' +
                         '<img class="card-icon" src="img/kettle.svg">' +
@@ -47,9 +47,4 @@ document.addEventListener("DOMContentLoaded", function () {
             buttonsContainer.style.display = "none";
         }
     }, 500)
-   
-
-    document.getElementsByClassName("header-menu__switcher")[0].addEventListener("click", function () {
-        document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active")
-    })
 }, !1);
