@@ -47,9 +47,4 @@ document.addEventListener("DOMContentLoaded", function () {
             buttonsContainer.style.display = "none";
         }
     }, 500)
-   
-
-    document.getElementsByClassName("header-menu__switcher")[0].addEventListener("click", function () {
-        document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active")
-    })
 }, !1);
