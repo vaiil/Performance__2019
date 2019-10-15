@@ -261,6 +261,10 @@ body, html {
     text-decoration: none
 }
 
+.header-menu__switcher {
+    display: none
+}
+
 .header-menu__link_active {
     opacity: 1
 }
@@ -1028,6 +1032,13 @@ html {
     .header-menu__link {
         padding: 20px 20px 20px 0;
         width: 100%
+    }
+
+    .header-menu__switcher {
+        float: right;
+        margin-top: 27px;
+        cursor: pointer;
+        display: block
     }
 
     .card {
