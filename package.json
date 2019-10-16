@@ -18,16 +18,18 @@
     "url": "https://github.com/vaiil/Performance__2019/issues"
   },
   "homepage": "https://github.com/vaiil/Performance__2019#readme",
-  "devDependencies": {
+  "dependencies": {
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
-    "hermione": "^2.13.1",
-    "html-reporter": "^5.0.1",
     "mini-css-extract-plugin": "^0.8.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
+  },
+  "devDependencies": {
+    "hermione": "^2.13.1",
+    "html-reporter": "^5.0.1"
   }
 }
