@@ -139,40 +139,22 @@ button::-moz-focus-inner,
     -webkit-appearance: button;
 }
 
-output {
-    display: inline-block;
-}
-
-summary {
-    display: list-item;
-    cursor: pointer;
-}
-
-template {
-    display: none;
-}
-
-[hidden] {
-    display: none !important;
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h2, h3, h4 {
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
 
 
-h2, .h2 {
+h2 {
     font-size: 2rem;
 }
 
-h3, .h3 {
+h3 {
     font-size: 1.75rem;
 }
 
-h4, .h4 {
+h4 {
     font-size: 1.5rem;
 }
 
@@ -235,10 +217,6 @@ header {
     a:not(.btn) {
         text-decoration: underline;
     }
-    abbr[title]::after {
-        content: " (" attr(title) ")";
-    }
-    tr,
     img {
         page-break-inside: avoid;
     }
@@ -279,20 +257,6 @@ body {
 
 ol, ul {
     list-style: none
-}
-
-blockquote, q {
-    quotes: none
-}
-
-blockquote:after, blockquote:before, q:after, q:before {
-    content: '';
-    content: none
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
 }
 
 input[type=range] {
@@ -831,10 +795,6 @@ html {
     z-index: 20;
     overflow: hidden;
     transition: height .5s ease
-}
-
-.video-controls_active {
-    height: 92px
 }
 
 .controls-text {
