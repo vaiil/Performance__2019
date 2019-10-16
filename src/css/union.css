@@ -94,7 +94,7 @@ input {
     overflow: visible;
 }
 
-button{
+button {
     text-transform: none;
 }
 
@@ -199,7 +199,6 @@ h4 {
 }
 
 
-
 header {
     height: 93px;
     box-sizing: border-box;
@@ -214,25 +213,31 @@ header {
         text-shadow: none !important;
         box-shadow: none !important;
     }
+
     a:not(.btn) {
         text-decoration: underline;
     }
+
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
     }
+
     @page {
         size: a3;
     }
+
     body {
         min-width: 992px !important;
     }
@@ -544,13 +549,16 @@ footer {
     grid-column: span 4;
     grid-row: span 3
 }
+
 .critical {
     color: #fff;
     padding: 0
 }
+
 * {
     box-sizing: border-box;
 }
+
 html {
     height: 100%;
 }
@@ -640,7 +648,7 @@ html {
     width: 100%;
     margin-top: 40px;
     display: block;
-    background: url(../img/cam2.jpg);
+    background: url(../img/vacuum-7.jpg);
     border-radius: 20px;
     background-size: cover;
     background-position: 0 0;
