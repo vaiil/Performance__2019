@@ -1,9 +1,10 @@
 const path = require('path')
-// const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const StyleLintPlugin = require('stylelint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 // const TerserJSPlugin = require('terser-webpack-plugin')
+const HTMLInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default
 
 module.exports = {
   entry: {
@@ -13,7 +14,7 @@ module.exports = {
     minimizer: [new OptimizeCSSAssetsPlugin({})],
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name].js'
   },
   module: {
@@ -70,6 +71,13 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
       ignoreOrder: false // Enable to remove warnings about conflicting order
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/index.html'
+    }),
+    new HTMLInlineCSSWebpackPlugin({
+      leaveCSSFile: false
     })
   ]
 }
