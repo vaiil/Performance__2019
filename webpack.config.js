@@ -76,7 +76,8 @@ module.exports = {
             options: {
               plugins: [
                 { removeTitle: true },
-                {convertColors: {shorthex: false}}
+                {convertColors: {shorthex: false}},
+                {convertPathData: false}
               ]
             }
           }
