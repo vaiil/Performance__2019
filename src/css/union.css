@@ -397,6 +397,10 @@ body, html {
     display: block
 }
 
+.switch-block_active {
+    display: block
+}
+
 .header-logo {
     width: 108px;
     float: left;
@@ -517,6 +521,7 @@ html {
 }
 
 .card-source {
+    display: inline-block;
     font-size: 18px
 }
 
