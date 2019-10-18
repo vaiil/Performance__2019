@@ -76,11 +76,11 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html',
       minify: {
-        // removeComments: true,
-        // removeRedundantAttributes: true,
-        // removeScriptTypeAttributes: true,
-        // removeStyleLinkTypeAttributes: true,
-        // useShortDoctype: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
         conservativeCollapse: true,
         collapseWhitespace: true
       }
