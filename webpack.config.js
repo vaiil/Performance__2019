@@ -79,5 +79,10 @@ module.exports = {
     new HTMLInlineCSSWebpackPlugin({
       leaveCSSFile: false
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'docs'),
+    compress: true,
+    port: 9000
+  }
 }
