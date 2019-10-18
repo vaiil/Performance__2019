@@ -56,11 +56,30 @@ module.exports = {
       //   loader: 'file-loader'
       // },
       {
-        test: /\.(png|jpe?g|svg|webp|bmp)/,
+        test: /\.(png|jpe?g|webp|bmp)/,
         loader: 'url-loader',
         options: {
           limit: 30000
         }
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 30000
+            }
+          },
+          {
+            loader: 'svgo-loader',
+            options: {
+              plugins: [
+                { removeTitle: true }
+              ]
+            }
+          }
+        ]
       }
     ]
   },

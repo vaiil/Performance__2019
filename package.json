@@ -33,6 +33,8 @@
   },
   "devDependencies": {
     "hermione": "^2.13.1",
-    "html-reporter": "^5.0.1"
+    "html-reporter": "^5.0.1",
+    "svgo": "^1.3.0",
+    "svgo-loader": "^2.2.1"
   }
 }
