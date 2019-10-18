@@ -31,7 +31,7 @@ confirmPurchaseButton.onclick = () => {
 
 document.getElementsByClassName('header-menu__switcher')[0].addEventListener('click', function () {
   document.getElementsByClassName('header-menu')[0].classList.toggle('header-menu_active')
-})
+});
 
 (function(w, d, n) {
   var s = d.createElement('script');
