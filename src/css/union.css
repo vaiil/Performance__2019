@@ -394,10 +394,6 @@ body, html {
 }
 
 .switch-block {
-    display: none
-}
-
-.switch-block_active {
     display: block
 }
 
@@ -521,7 +517,6 @@ html {
 }
 
 .card-source {
-    display: inline-block;
     font-size: 18px
 }
 
@@ -538,8 +533,6 @@ html {
 .card-description {
     display: block;
     font-size: 20px;
-    -webkit-columns: #000;
-    columns: #000;
     padding-top: 23px;
     margin-bottom: 9px
 }

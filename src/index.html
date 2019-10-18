@@ -45,11 +45,9 @@
 
 <div class="wrap">
 
-    <div class="switch-block switch-block_active" data="feed">
+    <div class="switch-block">
         <h2 class="content-heading">Лента событий</h2>
         <div class="content-block content">
-
-
             <div class="card card_size_l">
                 <div class="card-heading">
                     <div class="card-icon-wrap">
@@ -58,7 +56,7 @@
                     <h3 class="card-title">Еженедельный отчет по расходам ресурсов</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Сенсоры потребления</p>
+                    <span class="card-source">Сенсоры потребления</span>
                     <p class="card-time">19:00, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big">Так держать! За последнюю неделю вы потратили на 10% меньше ресурсов, чем неделей ранее.</p><div class="card-data card-data_graph">
@@ -74,7 +72,7 @@
                     <h3 class="card-title">Дверь открыта</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Сенсор входной двери</p>
+                    <span class="card-source">Сенсор входной двери</span>
                     <p class="card-time card-time_block">18:50, Сегодня</p>
                 </div>
             </div>
@@ -88,7 +86,7 @@
                     <h3 class="card-title">Уборка закончена</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Пылесос</p>
+                    <span class="card-source">Пылесос</span>
                     <p class="card-time card-time_block">18:45, Сегодня</p>
                 </div>
             </div>
@@ -102,7 +100,7 @@
                     <h3 class="card-title">Новый пользователь</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Роутер</p>
+                    <span class="card-source">Роутер</span>
                     <p class="card-time card-time_block">18:45, Сегодня</p>
                 </div>
             </div>
@@ -116,7 +114,7 @@
                     <h3 class="card-title">Изменен климатический режим</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Сенсор микроклимата</p>
+                    <span class="card-source">Сенсор микроклимата</span>
                     <p class="card-time">18:30, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big">Установлен климатический режим «Фиджи»</p><div class="card-data card-data_climat">
@@ -137,7 +135,7 @@
                     <h3 class="card-title">Невозможно включить кондиционер</h3>
                 </div>
                 <div class="card-specs specs-critical">
-                    <p class="card-source">Кондиционер</p>
+                    <span class="card-source">Кондиционер</span>
                     <p class="card-time">18:21, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big description_critical">В комнате открыто окно, закройте его и повторите попытку</p></div>
@@ -151,7 +149,7 @@
                     <h3 class="card-title">Музыка включена</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Яндекс.Станция</p>
+                    <span class="card-source">Яндекс.Станция</span>
                     <p class="card-time">18:16, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big description_critical">Сейчас проигрывается:</p><div class="card-data card-data_music">
@@ -194,7 +192,7 @@
                     <h3 class="card-title">Заканчивается молоко</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Холодильник</p>
+                    <span class="card-source">Холодильник</span>
                     <p class="card-time">17:23, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big description_critical">Кажется, в холодильнике заканчивается молоко. Вы хотите добавить его в список покупок?</p>
@@ -214,7 +212,7 @@
                     <h3 class="card-title">Зарядка завершена</h3>
                 </div>
                 <div class="card-specs">
-                    <p class="card-source">Оконный сенсор</p>
+                    <span class="card-source">Оконный сенсор</span>
                     <p class="card-time card-time_block">16:22, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big description_critical">Ура! Устройство «Оконный сенсор» снова в строю!</p></div>
@@ -232,7 +230,7 @@
                     <h3 class="card-title">Пылесос застрял</h3>
                 </div>
                 <div class="card-specs specs-critical">
-                    <p class="card-source">Сенсор движения</p>
+                    <span class="card-source">Сенсор движения</span>
                     <p class="card-time">16:17, Сегодня</p>
                 </div>
                 <p class="card-description card-description_big description_critical">Робопылесос не смог сменить свое местоположение в течение последних 3 минут. Похоже, ему нужна помощь.
@@ -243,7 +241,7 @@
                 </p></div>
 
 
-                <div class="card card_size_s"><div class="card-heading"><div class="card-icon-wrap"><img class="card-icon" src="<%=require('./img/kettle.svg')%>"></div><h3 class="card-title">Вода вскипела</h3> </div><div class="card-specs"><p class="card-source">Чайник</p><p class="card-time card-time_block">16:20, Сегодня</p></div></div>
+                <div class="card card_size_s"><div class="card-heading"><div class="card-icon-wrap"><img class="card-icon" src="<%=require('./img/kettle.svg')%>"></div><h3 class="card-title">Вода вскипела</h3> </div><div class="card-specs"><span class="card-source">Чайник</span><p class="card-time card-time_block">16:20, Сегодня</p></div></div>
 
         </div>
     </div>

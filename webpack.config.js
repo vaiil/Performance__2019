@@ -74,7 +74,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      minify: {
+        collapseWhitespace: true
+      }
     }),
     new HTMLInlineCSSWebpackPlugin({
       leaveCSSFile: false
