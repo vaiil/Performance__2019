@@ -53,12 +53,19 @@ module.exports = {
       //   loader: 'file-loader'
       // },
       {
-        test: /\.(png|jpe?g|webp|bmp|svg)/,
+        test: /\.(png|jpe?g|webp|bmp)/,
         loader: 'url-loader',
         options: {
           limit: 30000
         }
       },
+      {
+        test: /\.svg/,
+        use: {
+          loader: 'svg-url-loader',
+          options: {}
+        }
+      }
       // {
       //   test: /stats\.svg$/,
       //   use: [
@@ -105,6 +112,10 @@ module.exports = {
     }),
     new HtmlWebpackInlineSVGPlugin({
       runPreEmit: true,
+      svgoConfig: {
+        removeTitle: false,
+        removeViewBox: true,
+      },
     }),
     new HTMLInlineCSSWebpackPlugin({
       leaveCSSFile: false
