@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 // const TerserJSPlugin = require('terser-webpack-plugin')
 const HTMLInlineCSSWebpackPlugin = require('html-inline-css-webpack-plugin').default
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin')
 
 module.exports = {
   entry: {
@@ -19,10 +20,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.txt$/i,
-        use: 'raw-loader'
-      },
       {
         test: /\.css$/,
         use: [
@@ -56,33 +53,33 @@ module.exports = {
       //   loader: 'file-loader'
       // },
       {
-        test: /\.(png|jpe?g|webp|bmp)/,
+        test: /\.(png|jpe?g|webp|bmp|svg)/,
         loader: 'url-loader',
         options: {
           limit: 30000
         }
       },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 30000
-            }
-          },
-          {
-            loader: 'svgo-loader',
-            options: {
-              plugins: [
-                { removeTitle: true },
-                {convertColors: {shorthex: false}},
-                {convertPathData: false}
-              ]
-            }
-          }
-        ]
-      }
+      // {
+      //   test: /stats\.svg$/,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         limit: 30000
+      //       }
+      //     },
+      //     {
+      //       loader: 'svgo-loader',
+      //       options: {
+      //         plugins: [
+      //           { removeTitle: true },
+      //           {convertColors: {shorthex: false}},
+      //           {convertPathData: false}
+      //         ]
+      //       }
+      //     }
+      //   ]
+      // }
     ]
   },
   plugins: [
@@ -105,6 +102,9 @@ module.exports = {
         conservativeCollapse: true,
         collapseWhitespace: true
       }
+    }),
+    new HtmlWebpackInlineSVGPlugin({
+      runPreEmit: true,
     }),
     new HTMLInlineCSSWebpackPlugin({
       leaveCSSFile: false
