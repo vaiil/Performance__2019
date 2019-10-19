@@ -99,8 +99,8 @@ module.exports = {
         removeScriptTypeAttributes: true,
         removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
-        conservativeCollapse: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        collapseInlineTagWhitespace: false
       }
     }),
     new HtmlWebpackInlineSVGPlugin({

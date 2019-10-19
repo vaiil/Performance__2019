@@ -80,7 +80,6 @@ button {
 
 header {
     height: 93px;
-    box-sizing: border-box;
     padding: 0 40px;
     border-bottom: 1px solid #f0f0f0
 }
@@ -125,6 +124,7 @@ header {
 body {
     padding: 0;
     border: 0;
+    line-height: 1
 }
 
 * {
@@ -137,12 +137,13 @@ p, h2, h3, h4, menu {
     padding: 0;
 }
 
-body {
-    line-height: 1
-}
-
 ol, ul {
     list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 input[type=range] {
@@ -166,6 +167,7 @@ input[type=range]::-ms-track {
 }
 
 input[type=range].song-range::-webkit-slider-thumb {
+    margin-top: -8px;
     -webkit-appearance: none;
     border: none;
     height: 20px;
@@ -173,7 +175,6 @@ input[type=range].song-range::-webkit-slider-thumb {
     border-radius: 4.5px;
     background: #d8d8d8;
     cursor: pointer;
-    margin-top: -8px;
     box-shadow: none
 }
 
@@ -189,7 +190,7 @@ input[type=range].volume-range::-webkit-slider-thumb {
     box-shadow: none
 }
 
-input[type=range].song-range::-moz-range-thumb {
+input[type=range].song-range::-moz-range-thumb, input[type=range].song-range::-ms-thumb {
     -webkit-appearance: none;
     border: none;
     height: 20px;
@@ -211,16 +212,6 @@ input[type=range].volume-range::-moz-range-thumb {
     box-shadow: none
 }
 
-input[type=range].song-range::-ms-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 20px;
-    width: 12px;
-    border-radius: 4.5px;
-    background: #d8d8d8;
-    cursor: pointer;
-    box-shadow: none
-}
 
 input[type=range].volume-range::-ms-thumb {
     -webkit-appearance: none;
@@ -340,10 +331,6 @@ body, html {
     justify-content: center
 }
 
-.switch-block {
-    display: block
-}
-
 .switch-block_active {
     display: block
 }
@@ -410,7 +397,7 @@ footer {
     background: #ebebeb;
     color: #333;
     border-radius: 23px;
-    box-sizing: border-box;
+
     padding: 0 20px 20px 20px;
 }
 
@@ -433,10 +420,6 @@ footer {
 .critical {
     color: #fff;
     padding: 0
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .card-heading {
@@ -466,12 +449,10 @@ footer {
 }
 
 .card-source {
-    display: inline-block;
     font-size: 18px
 }
 
 .card-time {
-    display: block;
     font-size: 18px;
     float: right
 }
@@ -498,21 +479,20 @@ footer {
     color: #000;
     border-radius: 20px;
     margin-top: -20px;
-    box-sizing: border-box;
     padding: 23px 20px;
     touch-action: none
 }
 
 .heading-critical {
     background: rgba(219, 83, 65, 1);
-    box-sizing: border-box;
+
     padding: 0 20px;
     border-radius: 20px 20px 0 0
 }
 
 .specs-critical {
     background: rgba(219, 83, 65, 1);
-    box-sizing: border-box;
+
     padding: 0 20px 28px 20px
 }
 
@@ -660,7 +640,7 @@ html {
 }
 
 .video-controls-wrap {
-    box-sizing: border-box;
+
     padding: 40px;
     display: block;
     width: 100%
