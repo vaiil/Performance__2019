@@ -11,24 +11,6 @@ body {
     background-color: #fff;
 }
 
-h2, h3, h4 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-ol,
-ul,
-dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-
 a {
     color: #007bff;
     text-decoration: none;
@@ -56,48 +38,23 @@ svg {
     vertical-align: middle;
 }
 
-button {
-    border-radius: 0;
-}
-
 button:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
 
 button {
+    border-radius: 0;
     margin: 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
+    text-transform: none;
 }
 
 button,
 input {
     overflow: visible;
-}
-
-button{
-    text-transform: none;
-}
-
-h2, h3, h4 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.75rem;
-}
-
-h4 {
-    font-size: 1.5rem;
 }
 
 .purchase-list__item + .purchase-list__item {
@@ -141,7 +98,6 @@ h4 {
 }
 
 
-
 header {
     height: 93px;
     box-sizing: border-box;
@@ -156,37 +112,49 @@ header {
         text-shadow: none !important;
         box-shadow: none !important;
     }
+
     a:not(.btn) {
         text-decoration: underline;
     }
+
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
     }
+
     @page {
         size: a3;
     }
+
     body {
         min-width: 992px !important;
     }
 }
 
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
+body {
     padding: 0;
     border: 0;
+}
+
+* {
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline
+}
+
+p, h2, h3, h4, menu {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -482,17 +450,15 @@ footer {
     grid-column: span 4;
     grid-row: span 3
 }
+
 .critical {
     color: #fff;
     padding: 0
 }
+
 * {
     box-sizing: border-box;
 }
-html {
-    height: 100%;
-}
-
 
 .card-heading {
     display: flex;
