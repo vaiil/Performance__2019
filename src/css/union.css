@@ -26,18 +26,6 @@ a:not([href]):not([tabindex]) {
     color: inherit;
     text-decoration: none;
 }
-
-
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-
-svg {
-    overflow: hidden;
-    vertical-align: middle;
-}
-
 button:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -46,15 +34,7 @@ button:focus {
 button {
     border-radius: 0;
     margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
     text-transform: none;
-}
-
-button,
-input {
-    overflow: visible;
 }
 
 .purchase-list__item + .purchase-list__item {
@@ -347,7 +327,6 @@ body, html {
     font-family: Arial;
     padding: 0;
     margin: 0;
-    height: 100%;
     width: 100%
 }
 

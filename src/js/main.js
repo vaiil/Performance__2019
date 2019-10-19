@@ -6,9 +6,9 @@ const fridgeInfoContainer = document.querySelector('.card_size_m:nth-child(8) .c
 const confirmPurchaseButton = document.querySelector('.buttons-wrap .button_yellow')
 const purchaseListContainer = document.createElement('div')
 const purchaseListTitle = document.createElement('p')
-const purchaseList = document.createElement('ol')
-const purchaseListItemOne = document.createElement('li')
-const purchaseListItemTwo = document.createElement('li')
+const purchaseList = document.createElement('div')
+const purchaseListItemOne = document.createElement('div')
+const purchaseListItemTwo = document.createElement('div')
 
 purchaseListContainer.setAttribute('class', 'purchase-list-wrap')
 purchaseListTitle.setAttribute('class', 'card-description card-description_big description_critical')

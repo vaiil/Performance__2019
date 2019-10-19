@@ -5,10 +5,26 @@ module.exports = {
     full: {
       desiredCapabilities: {
         browserName: 'chrome'
+      },
+      compositeImage: true,
+    },
+    1280: {
+      compositeImage: true,
+      windowSize: { width: 1280, height: 4000 },
+      desiredCapabilities: {
+        browserName: 'chrome'
       }
     },
-    1000: {
-      windowSize: '1000x4000',
+    768: {
+      compositeImage: true,
+      windowSize: { width: 768, height: 4000 },
+      desiredCapabilities: {
+        browserName: 'chrome'
+      }
+    },
+    375: {
+      compositeImage: true,
+      windowSize: { width: 375, height: 4000 },
       desiredCapabilities: {
         browserName: 'chrome'
       }
