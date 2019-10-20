@@ -289,20 +289,6 @@
         <a class="footer-menu__link" href="assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
-<script>
-  const q = document.querySelector.bind(document), b = q('.buttons-wrap'),
-    f = q('.card_size_m:nth-child(8) .card-description'),
-    l = q('.purchase-list-wrap')
-
-  q('.buttons-wrap .button_yellow').onclick = () => {
-    f.remove()
-    l.style.display = 'block'
-    b.style.display = 'none'
-  }
-
-  q('.header-menu__switcher').onclick = () => {
-    q('.header-menu').classList.toggle('header-menu_active')
-  }
-</script>
+<script>const q = document.querySelector.bind(document);q('.buttons-wrap .button_yellow').onclick = () => {q('.card_size_m:nth-child(8) .card-description').remove();q('.purchase-list-wrap').style.display = 'block';q('.buttons-wrap').style.display = 'none'};q('.header-menu__switcher').onclick=()=>q('.header-menu').classList.toggle('header-menu_active')</script>
 </body>
 </html>
