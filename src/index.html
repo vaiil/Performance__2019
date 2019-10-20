@@ -290,7 +290,7 @@
     </menu>
 </footer>
 <script>
-  const q = document.querySelector, b = q('.buttons-wrap'),
+  const q = document.querySelector.bind(document), b = q('.buttons-wrap'),
     f = q('.card_size_m:nth-child(8) .card-description'),
     l = q('.purchase-list-wrap')
 
