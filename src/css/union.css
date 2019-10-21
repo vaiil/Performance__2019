@@ -26,6 +26,7 @@ a:not([href]):not([tabindex]) {
     color: inherit;
     text-decoration: none;
 }
+
 button:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -339,6 +340,13 @@ body, html {
     width: 108px;
     float: left;
     margin: 32px 21px 0 0
+}
+
+.header-logo:before {
+    content: '';
+    display: block;
+    padding-bottom: 25%;
+    background: url('../img/yd2.png') 0 0/contain;
 }
 
 .header-menu {
