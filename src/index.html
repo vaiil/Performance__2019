@@ -17,7 +17,7 @@
     </div>
 </div>
 <header>
-    <div class="header-logo"></div>
+    <img class="header-logo" data-src="yd2.png">
     <menu class="header-menu">
         <a class="header-menu__link" href="cam.html">Видеонаблюдение</a>
         <a class="header-menu__link header-menu__link_active " href="index.html">События</a>
@@ -289,6 +289,13 @@
         <a class="footer-menu__link" href="assets/license.pdf" target="blank">Лицензия</a>
     </menu>
 </footer>
-<script>const q=document.querySelector.bind(document);q('.buttons-wrap .button_yellow').onclick=()=>{q('.card_size_m:nth-child(8) .card-description').remove();q('.purchase-list-wrap').style.display = 'block';q('.buttons-wrap').style.display = 'none'};q('.header-menu__switcher').onclick=()=>q('.header-menu').classList.toggle('header-menu_active')</script>
+<script>const q=document.querySelector.bind(document);q('.buttons-wrap .button_yellow').onclick=()=>{q('.card_size_m:nth-child(8) .card-description').remove();q('.purchase-list-wrap').style.display = 'block';q('.buttons-wrap').style.display = 'none'};q('.header-menu__switcher').onclick=()=>q('.header-menu').classList.toggle('header-menu_active')
+document.addEventListener('readystatechange', event => {
+  if (event.target.readyState === "interactive") {
+    const logo = q('.header-logo')
+    logo.src = logo.dataset.src
+  }
+})
+</script>
 </body>
 </html>
