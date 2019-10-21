@@ -53,11 +53,7 @@ module.exports = {
       //   loader: 'file-loader'
       // },
       {
-        test: /\.png/,
-        loader: 'file-loader'
-      },
-      {
-        test: /\.(jpe?g|webp|bmp)/,
+        test: /\.(png|jpe?g|webp|bmp)/,
         loader: 'url-loader',
         options: {
           limit: 30000
