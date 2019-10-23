@@ -56,7 +56,7 @@ module.exports = {
         test: /\.(png|jpe?g|webp|bmp)/,
         loader: 'url-loader',
         options: {
-          limit: 30000
+          limit: 50000
         }
       },
       {
